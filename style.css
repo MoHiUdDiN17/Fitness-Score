@@ -1,0 +1,50 @@
+.resize {
+    height: 50px;
+}
+
+.sizing {
+    border-radius: 50%;
+}
+
+.back {
+    height: 270px;
+    border-radius: 10px;
+}
+
+.circle {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+/* footer */
+.bottom {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    color: #ffff;
+}
+
+#goal {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#horizontal {
+    width: 1320px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer_each {
+    margin-right: 20px;
+}
