@@ -25,10 +25,12 @@ document.getElementById('myInput').addEventListener("keydown", () => {
     const temp = [...userData];
     const filteredUser = temp.filter(element => {
         const userName = element?.name?.toLowerCase();
-        const value = userName.search(message);
+        const value = userName.search(message.toLowerCase());
         const country = element?.country?.toLowerCase();
-        const value1 = country.search(message);
-        return (!value || !value1);
+        const value1 = country.search(message.toLowerCase());
+        if (value === -1 && value1 === -1)
+            return 0;
+        return 1;
     })
     while (tableBody.firstChild) {
         tableBody.removeChild(tableBody.firstChild);
